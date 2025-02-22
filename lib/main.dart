@@ -1,16 +1,45 @@
-void main() {
-  print("I am a mobile developer");
-  print("Hi my name is Bianca");
-  var name = "Bianca Ysabel";
-  print("Hello $name");
-  const place = "SFC";
-  final color = "mlue";
-  //type annotation
+import 'package:flutter/material.dart';
 
-  String vegetable = "ngamage";
-
-  int? age;
-
-  print(age);
-
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            height: 200,
+            color: Colors.deepPurple[200],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            height: 200,
+            color: Colors.deepPurple[200],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            height: 200,
+            color: Colors.deepPurple[200],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            height: 200,
+            color: Colors.deepPurple[200],
+            decoration: BoxDecoration(
+        color: const Color.fromARGB(255, 8, 70, 123),
+        borderRadius: BorderRadius.circular(15),
+          ),
+        ),
+        ),
+      ],
+    ));
+  }
 }
